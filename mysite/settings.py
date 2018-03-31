@@ -125,3 +125,4 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 TEMPLATE_DIRS = (
     os.path.join(SETTINGS_PATH, 'templates'),
 )
+SETTINGS_PATH = os.path.dirname(os.path.dirname(__file__))
