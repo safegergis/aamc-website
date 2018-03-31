@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'announcements',
     'home',
     'information',
-    'twitter_feed',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
