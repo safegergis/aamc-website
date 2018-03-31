@@ -25,11 +25,7 @@ SECRET_KEY = '+&y6_(_7=v(s)-x+)lpf@2b9^u3_$ya(*n_0nlnklasmha&fzh'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-TWITTER_FEED_CONSUMER_PUBLIC_KEY = 'TWWewG75yzhwKeWrOWlILowmV'
-TWITTER_FEED_CONSUMER_SECRET = 'I8cruG8zoTe0QsrnPjgAfMhIQRWDYjkTb2EmD3vkG8AqfEsepC'
-TWITTER_FEED_OPEN_AUTH_TOKEN = '706178168789422080-lEwkuL8hzBvZ5UEFyeVc7eDJjdXZfda'
-TWITTER_FEED_OPEN_AUTH_SECRET = 'R1sg7JoTlhCKr6Vraf3NTimjGP1h3st84EsUOQsomQ9mz'
+ALLOWED_HOSTS = ['obscure-fortress-66698.herokuapp.com']
 
 # Application definition
 
