@@ -1,0 +1,21 @@
+{% extends "home/header.html "%}
+{% load static %}
+
+{% block content %}
+{% include "information/includes/information/header.html" %}
+	<div class="container">
+		<div class="row">
+			<div class="col text-center">
+				<h2>Fr. Mark Hanna</h2>
+				<img src={% static "img/information/mark.jpg" %}>
+				<p><strong>Father Mark Hanna</strong> was born in Egypt on November 27, 1965. He earned a Bachelor’s Degree in Business in 1989 from Ain Shams University. He served for several years in St. George “Hamamat el Qoba” in Cairo. He served as a Youth Leader and in Choir. He came to United States in 2001 and served at Archangel Michael Church in Santa Ana. On November 27, 2011 His Grace Bishop Serapion ordained him presbyter to serve at Archangel Michael Church in Santa Ana</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col text-center">
+				<h3>Contact</h3>
+				<a href="frmarkhanna@lacopts.org">frmarkhanna@lacopts.org</a>
+			</div>
+		</div>
+	</div>
+{% endblock %}

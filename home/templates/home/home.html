@@ -1,0 +1,69 @@
+{% extends "home/header.html" %}
+{% load static %}
+{% block content %}
+	<script
+	src="http://code.jquery.com/jquery-3.3.1.js"
+	integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/jarallax@1.9/dist/jarallax.min.js"></script>
+	<div data-jarallax data-speed="0.2" class="jarallax">
+		<img src={% static "img/home/frontpage.jpeg"%} class="jarallax-img">
+		<div class="container">
+			<p class="h2" style="opacity:0">
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+			</p>
+		</div>
+		<div class="row" style="background-color: #FFFFFF">
+			<div class="container animated fadeIn">
+				<div class="row">
+					<div class="col float-left">
+						<h1 class="display-3"> Welcome</h1>
+						<h1 class="display-5 "><small class="text-muted">To Archangel Michael Coptic Orthodox Church</small></h1>
+						<p class="lead"> We are a Coptic-American Church serving Santa Ana, California. We have both primary English and Arabic Services on Sundays of each week. We practice an ancient Christianity originating around 42 AD when St. Mark the Evangelist spread the Holy Word of God to all of Egypt. </p>
+						<a href="/information" class="btn btn-danger btn-lg">Learn More</a>
+					</div>
+					<div class="col mp-0">
+						<img src={% static "img/home/aamichael.png" %} class="float-right pb-0">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row" style="background-color:#ad2424">
+			<div class="container animated fadeIn">
+				<div class="container text-center mt-5">
+					<h1 class="display-4 text-light">Come find your place with us</h1>
+				</div>
+				<div class="container text-center">
+					<div class="row">
+						<div class="col">
+							<a href="/announcements" class="btn btn-lg btn-info">Announcements</a>
+							<a href="https://www.youtube.com/user/archangelmichaeloc" class="btn btn-lg btn-info">Visit our Youtube</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col mt-3 mb-5">
+							<a href="/information" class="btn btn-lg btn-info">Learn</a>
+							<a href="/information/schedule" class="btn btn-lg btn-info">View Schedule</a>
+							<a href="https://www.google.com/maps/place/Archangel+Michael+Church/@33.7312725,-117.9296534,17z/data=!3m1!4b1!4m5!3m4!1s0x80dd277e460c849b:0xd769d13739856b9a!8m2!3d33.7312681!4d-117.9274647?shorturl=1" class="btn btn-lg btn-info">Get Directions</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row" style="background-color:#3d5f96;">
+			<div class="container animated fadeIn">
+				<div class="col">
+					<div class="text-center">
+						<img src={% static "img/quoteicon.png" %} class="mt-3" style="width: 30px;height: 30px">
+					</div>
+					<div class="text-center">
+						<blockquote class="blockquote text-light">
+							<p class="h2 pt-2">And war broke out in heaven: Michael and his angels fought with the dragon; and the dragon and his angels fought, but they did not prevail, nor was a place found for them in heaven any longer.</p>
+						<footer class="blockquote-footer text-light pt-3 pb-4"><cite title="Revelations 12:7">Revelations 12:7-8</cite></footer>
+					</blockquote>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

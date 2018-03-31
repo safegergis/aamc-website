@@ -1,0 +1,48 @@
+{% extends "home/header.html "%}
+{% load static%}
+{% block content %}
+{% include "information/includes/information/header.html"%}
+	<div class="container">
+		<div class="row">
+			<div class="col-9">
+				<h2 class="display-4">Our Humble Beginnings</h2>
+				<p class="text-justify">Archangel Michael Coptic Orthodox Church in Orange County is one of the original ten Coptic Orthodox Churches established in Southern California by the effort of His Grace Bishop Dioscorus. Archangel Michael Coptic Orthodox Church was first established in 1981. Archangel Michael Church began with a small faithful congregation consisting of a small number of families. These families first gathered in 1981 in a small house which they collective purchased and later turned it into the first Archangel Michael Church. Liturgies were held by the efforts of Father Ibrahim Aziz at Archangel Michael Church every other Saturday. Soon after, a second house near the church was purchased to be used as the priest’s residence. Later in 1985, for a period of six months Father Bachoum Habib served at Archangel Michael Church. During his service, he performed the Holy Liturgy every Sunday, which lead to a significant increase in churchgoers.The following year, His Holiness Pope Shenouda III sent Father Felimon Mikhail from Egypt to be the lead priest of Archangel Michael Church. Father Felimon has been diligently serving Archangel Michael Church and her loyal congregation ever since. With Father Felimon’s pastoral leadership and guidance the church’s prayers, meetings, and activities developed into weekly events. Over the course of a few years, the congregation multiplied and quickly outgrew the small church, as devout worshipers traveled from different parts of Los Angeles and Orange County to join. On November 11, 1989 many prayers were answered when His Holiness Pope Shenouda III laid down the foundation for a building, which would later become the new Archangel Michael Church. Construction began in October of 1990 and was completed on September 20 of 1992. His Holiness consecrated the Altar of the new Archangel Michael Church on September 22, 1993. This church in Santa Ana, CA became the permanent location of Archangel Michael Church. The church continued to grow, demanding the attention of another priest. On November 14, 1993, His Holiness Pope Shenouda III ordained Father Athanasius Ragheb as a second priest for the Archangel Michael Church. As a strong pillar of the church, Father Athanasius continues to serve Archangel Michael Church today. Nearly a decade later, God blessed Archangel Michael Church with a third priest. On June 30, 2002 His Grace Bishop Serapion ordained Father Youhanna Ibrahim, who has been a dedicated minister to Archangel Michael since his ordination. To support the expansion of the church, Archangel Michael Church recently welcomed Father Mark Hanna as the newest priest. Farther Mark was ordained by His Grace Bishop Serapion and His Grace Bishop Youssef on November 27 , 2011. By the grace of God, the church will steadily increase and prosper. May God continue to bless our congregation through the intercessions of our beloved Archangel Michael. </p>
+		</div>
+			<div class="col">
+				<h2 class="h2">Our Fathers</h2>
+				<ul class="text-justify">
+					<li><a href="fm/">Fr. Felimon Mikhail</a></li>
+					<li><a href="yi/">Fr. Youhanna Ibrahim</a></li>
+					<li><a href="mh/">Fr. Mark Hanna</a></li>
+				</ul>
+			</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<h2 class="display-4"> The Evolution of Our Church</h2>
+	</div>
+	<div class="row">
+
+		<div class="col">
+			<img src={% static "img/information/oldchurch.png" %}>
+			<p class="lead"> Our Church in 1987</p>
+		</div>
+		<div class="col">
+			<img src={% static "img/information/construction.png" %} >
+			<p class="lead ">Construction in 1990s</p>
+		</div>
+</div>
+<div class="container ">
+	<div class="row">
+		<div class="col pt-4">
+				<img src={% static "img/information/interior.jpeg" %} >
+				<p class="lead ">Interior in 1993</p>
+		</div>
+		<div class="col pt-5">
+			<img src={% static "img/information/interiorn.jpeg" %} style="width:269px; height:220px; transform :rotate(90deg);" >
+			<p class="lead pt-4 pl-4">Interior in 2018</p>
+		</div>
+	</div>
+</div>
+{% endblock %}

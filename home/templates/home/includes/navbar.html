@@ -1,0 +1,42 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/home">
+    <img src={% static "img/logo.png" %} width=240 height = 68>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/announcements">Announcements</a>
+      </li>
+      <li class="nav-item ac">
+        <a class="nav-link " href="/information"  role="button" >
+          Our Church
+        </a>
+      </li>
+      <li class="nav-item ac">
+          <a class="nav-link " href="/information/schedule"  role="button" >
+            Schedule
+          </a>
+        </li>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+            <div class="paypal-donations">
+                <input type="hidden" name="cmd" value="_donations" />
+                <input type="hidden" name="bn" value="TipsandTricks_SP" />
+                <input type="hidden" name="business" value="donate@archangelmichaeloc.org" />
+                <input type="hidden" name="return" value="http://archangelmichaeloc.org/" />
+                <input type="hidden" name="rm" value="0" />
+                <input type="hidden" name="currency_code" value="USD" />
+                <button class="btn btn-outline-primary">Donate</button>
+            </div>
+        </form>
+        
+    </ul>
+  </div>
+</nav>
