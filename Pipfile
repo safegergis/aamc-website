@@ -11,6 +11,8 @@ tweepy = "*"
 python-twitter = "*"
 django = "*"
 gunicorn = "*"
+django-storages = "*"
+boto = "*"
 
 
 [dev-packages]

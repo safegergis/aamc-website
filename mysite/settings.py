@@ -30,6 +30,7 @@ ALLOWED_HOSTS = ['obscure-fortress-66698.herokuapp.com']
 # Application definition
 
 INSTALLED_APPS = [
+    'django-storages',
     'announcements',
     'home',
     'information',
@@ -101,6 +102,12 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+AWS_STORAGE_BUCKET_NAME = 'aamc-assets'  
+AWS_ACCESS_KEY_ID = 'AKIAI4LTPXXI5RCJPP6A'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME  
+STATIC_URL = "https://%s/" % AWS_S3_CUSTOM_DOMAIN  
+STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage' 
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
@@ -118,6 +125,3 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
-PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
-STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
-STATIC_URL = '/static/'
