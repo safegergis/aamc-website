@@ -2,8 +2,8 @@ from django.db import models
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 import tweepy
-auth = tweepy.OAuthHandler('TWWewG75yzhwKeWrOWlILowmV', 'I8cruG8zoTe0QsrnPjgAfMhIQRWDYjkTb2EmD3vkG8AqfEsepC')
-auth.set_access_token('706178168789422080-lEwkuL8hzBvZ5UEFyeVc7eDJjdXZfda','R1sg7JoTlhCKr6Vraf3NTimjGP1h3st84EsUOQsomQ9mz')
+auth = tweepy.OAuthHandler('J3SwYatgiR5M1xt6O6x7cjvuj', 'XisaR4offolPVvQznlrHPlxQt5lSmC3l7bTHoyYiE1Zy4HyULs')
+auth.set_access_token('255237367-5NICERfrsEswrN2xTkFFDkSJKlt1JOIFDNExTcdB','OMcyYRX2rU4RwQRW79Lv6WdBuAu0puGPNOki79qAT7MU6')
 api = tweepy.API(auth)
 
 class Post(models.Model):
