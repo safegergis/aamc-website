@@ -30,7 +30,7 @@ ALLOWED_HOSTS = ['obscure-fortress-66698.herokuapp.com']
 # Application definition
 
 INSTALLED_APPS = [
-    'django-storages',
+    'storages',
     'announcements',
     'home',
     'information',
