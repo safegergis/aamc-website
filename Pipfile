@@ -11,8 +11,7 @@ tweepy = "*"
 python-twitter = "*"
 django = "*"
 gunicorn = "*"
-django-storages = "*"
-boto = "*"
+whitenoise = "*"
 
 
 [dev-packages]

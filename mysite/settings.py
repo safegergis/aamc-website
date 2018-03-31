@@ -30,7 +30,6 @@ ALLOWED_HOSTS = ['obscure-fortress-66698.herokuapp.com']
 # Application definition
 
 INSTALLED_APPS = [
-    'storages',
     'announcements',
     'home',
     'information',
@@ -44,6 +43,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -102,12 +102,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-AWS_STORAGE_BUCKET_NAME = 'aamc-assets'  
-AWS_ACCESS_KEY_ID = 'AKIAI4LTPXXI5RCJPP6A'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME  
-STATIC_URL = "https://%s/" % AWS_S3_CUSTOM_DOMAIN  
-STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage' 
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
@@ -122,6 +116,14 @@ USE_L10N = True
 
 USE_TZ = True
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = '/static/'
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
