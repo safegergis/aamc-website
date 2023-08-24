@@ -3,7 +3,11 @@
 Welcome to the repository for my Django-based website project that utilizes Bootstrap for the frontend, features animations to enhance user experience, connects to Twitter to update blog posts, and includes an admin page for easy management.
 
 ##Project Demo
-![ezgif-2-a2a44fc6bc](https://github.com/safegergis/aamc-website/assets/33107228/6f72d18d-fd14-4db1-9d20-7220730373d0)
+
+
+https://github.com/safegergis/aamc-website/assets/33107228/b25e4987-6a6b-4296-85df-c2e3e84ac41e
+
+
 <img width="1489" alt="Screenshot 2023-08-23 at 3 28 57 PM" src="https://github.com/safegergis/aamc-website/assets/33107228/e7eeca32-864b-4524-8c08-43562f39d8c4">
 <img width="1489" alt="Screenshot 2023-08-23 at 3 29 30 PM" src="https://github.com/safegergis/aamc-website/assets/33107228/8a61aa8f-007a-423b-9fbb-6ef64d032283">
 <img width="854" alt="Screenshot 2023-08-23 at 6 03 16 PM" src="https://github.com/safegergis/aamc-website/assets/33107228/71a10ad6-6fa6-4be1-af18-5e1d1d290893">
